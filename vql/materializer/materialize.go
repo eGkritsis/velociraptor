@@ -197,7 +197,7 @@ func (self Materializer) Materialize(
 	row_limit := vql_subsystem.GetIntFromRow(
 		scope, scope, constants.VQL_MATERIALIZE_ROW_LIMIT)
 	if row_limit == 0 {
-		row_limit = 1000
+		row_limit = 100000
 	}
 
 	rows := []types.Row{}
